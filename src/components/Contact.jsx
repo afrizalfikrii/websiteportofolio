@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import RevealOnScroll from './RevealOnScroll';
 import data from '../portfolioData.json';
 
@@ -26,7 +26,7 @@ const Contact = () => {
       </RevealOnScroll>
 
       {/* Contact Cards */}
-      <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {/* Email Card */}
         <RevealOnScroll delay={100}>
           <a 
@@ -42,25 +42,6 @@ const Contact = () => {
             {/* Glow Effect */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-cyan-500/10 blur-3xl"></div>
-            </div>
-          </a>
-        </RevealOnScroll>
-
-        {/* Phone Card */}
-        <RevealOnScroll delay={200}>
-          <a 
-            href={`tel:${data.contact.phone}`}
-            className="block group relative p-8 bg-[#0a0f1c]/50 backdrop-blur-sm border border-white/5 rounded-2xl hover:border-purple-500/30 transition-all duration-500 text-center"
-          >
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-950/30 border border-purple-500/20 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-              <Phone className="text-purple-400" size={28} />
-            </div>
-            <h3 className="text-white font-bold mb-2">Phone</h3>
-            <p className="text-slate-400 text-sm">{data.contact.phone}</p>
-            
-            {/* Glow Effect */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-purple-500/10 blur-3xl"></div>
             </div>
           </a>
         </RevealOnScroll>
