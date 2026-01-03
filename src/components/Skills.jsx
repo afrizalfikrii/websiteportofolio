@@ -13,7 +13,7 @@ const SkillCard = ({ skill, delay }) => {
 
   // Check if file is SVG based on iconName
   const isSVG = (iconName) => {
-    const svgIcons = ['react', 'js', 'javascript', 'tailwind', 'tailwindcss', 'html', 'html5', 'php', 'python', 'mysql', 'postgresql', 'git', 'nodejs', 'nodedotjs', 'vite', 'nextdotjs'];
+    const svgIcons = ['react', 'js', 'javascript', 'typescript', 'tailwind', 'tailwindcss', 'html', 'html5', 'php', 'python', 'mysql', 'postgresql', 'git', 'nodejs', 'nodedotjs', 'vite', 'nextdotjs', 'docker'];
     return svgIcons.includes(iconName.toLowerCase());
   };
 
@@ -96,6 +96,19 @@ const SkillCard = ({ skill, delay }) => {
 };
 
 const Skills = () => {
+  // Group skills by category
+  const groupedSkills = data.skills.reduce((acc, skill) => {
+    const category = skill.category || 'Other';
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(skill);
+    return acc;
+  }, {});
+
+  // Define category order
+  const categoryOrder = ['Frontend', 'Backend', 'Database', 'Tools & DevOps'];
+
   return (
     <section id="skills" className="mb-32">
       <RevealOnScroll>
@@ -108,13 +121,28 @@ const Skills = () => {
         </div>
       </RevealOnScroll>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {data.skills.map((skill, index) => (
-          <SkillCard key={index} skill={skill} delay={index * 100} />
-        ))}
-      </div>
+      {categoryOrder.map((category, catIndex) => {
+        const categorySkills = groupedSkills[category];
+        if (!categorySkills || categorySkills.length === 0) return null;
+        
+        return (
+          <div key={category} className="mb-16">
+            <RevealOnScroll delay={catIndex * 100}>
+              <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-6">
+                {category}
+              </h3>
+            </RevealOnScroll>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {categorySkills.map((skill, index) => (
+                <SkillCard key={index} skill={skill} delay={(catIndex * 200) + (index * 100)} />
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </section>
   );
 };
 
-export default Skills;  
+export default Skills;

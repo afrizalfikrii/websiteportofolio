@@ -5,84 +5,109 @@
   "bio": "Membangun sistem backend yang scalable dan eksplorasi teknologi full-stack modern.",
   "location": "Karanganyar, ID",
   "campus": "Universitas Muhammadiyah Surakarta",
-  "profilePic": "/images/fotoku.jpg",
-  "socials": { 
+  "profilePic": "/profile.jpg",
+  "socials": {
     "github": "https://github.com/afrizalfikrii",
-    "linkedin": "https://id.linkedin.com/in/afrizal-fikri-172bb8360"
+    "linkedin": "https://linkedin.com/in/afrizalfikri"
   },
   "skills": [
     { 
       "name": "React JS", 
       "level": "Intermediate", 
       "iconName": "react", 
-      "color": "cyan" 
-      
-    },
-    { 
-      "name": "JavaScript", 
-      "level": "Intermediate", 
-      "iconName": "js", 
-      "color": "yellow" 
-    },
-    { 
-      "name": "Tailwind CSS", 
-      "level": "Advanced", 
-      "iconName": "tailwind", 
-      "color": "cyan" 
-    },
-    { 
-      "name": "HTML & CSS", 
-      "level": "Advanced", 
-      "iconName": "html", 
-      "color": "orange" 
-    },
-    { 
-      "name": "PHP & Laravel", 
-      "level": "Intermediate", 
-      "iconName": "php", 
-      "color": "purple" 
-    },
-    { 
-      "name": "Python & Django", 
-      "level": "Intermediate", 
-      "iconName": "python", 
-      "color": "blue" 
-    },
-    { 
-      "name": "MySQL", 
-      "level": "Intermediate", 
-      "iconName": "mysql", 
-      "color": "blue" 
-    },
-    { 
-      "name": "PostgreSQL", 
-      "level": "Beginner", 
-      "iconName": "postgresql", 
-      "color": "blue" 
-    },
-    { 
-      "name": "Git & GitHub", 
-      "level": "Intermediate", 
-      "iconName": "git", 
-      "color": "orange" 
-    },
-    { 
-      "name": "Node.js", 
-      "level": "Intermediate", 
-      "iconName": "nodejs", 
-      "color": "green" 
-    },
-    { 
-      "name": "Vite", 
-      "level": "Intermediate", 
-      "iconName": "vite", 
-      "color": "purple" 
+      "color": "cyan",
+      "category": "Frontend"
     },
     { 
       "name": "Next.js", 
       "level": "Intermediate", 
       "iconName": "nextdotjs", 
-      "color": "purple" 
+      "color": "purple",
+      "category": "Frontend"
+    },
+    { 
+      "name": "JavaScript", 
+      "level": "Intermediate", 
+      "iconName": "js", 
+      "color": "yellow",
+      "category": "Frontend"
+    },
+    { 
+      "name": "TypeScript", 
+      "level": "Intermediate", 
+      "iconName": "typescript", 
+      "color": "blue",
+      "category": "Frontend"
+    },
+    { 
+      "name": "Tailwind CSS", 
+      "level": "Advanced", 
+      "iconName": "tailwind", 
+      "color": "cyan",
+      "category": "Frontend"
+    },
+    { 
+      "name": "HTML & CSS", 
+      "level": "Advanced", 
+      "iconName": "html", 
+      "color": "orange",
+      "category": "Frontend"
+    },
+    { 
+      "name": "Vite", 
+      "level": "Intermediate", 
+      "iconName": "vite", 
+      "color": "purple",
+      "category": "Frontend"
+    },
+    { 
+      "name": "PHP & Laravel", 
+      "level": "Intermediate", 
+      "iconName": "php", 
+      "color": "purple",
+      "category": "Backend"
+    },
+    { 
+      "name": "Python & Django", 
+      "level": "Intermediate", 
+      "iconName": "python", 
+      "color": "blue",
+      "category": "Backend"
+    },
+    { 
+      "name": "Node.js", 
+      "level": "Intermediate", 
+      "iconName": "nodejs", 
+      "color": "green",
+      "category": "Backend"
+    },
+    { 
+      "name": "MySQL", 
+      "level": "Intermediate", 
+      "iconName": "mysql", 
+      "color": "blue",
+      "category": "Database"
+    },
+    { 
+      "name": "PostgreSQL", 
+      "level": "Beginner", 
+      "iconName": "postgresql", 
+      "color": "blue",
+      "category": "Database"
+    },
+    { 
+      "name": "Git & GitHub", 
+      "level": "Intermediate", 
+      "iconName": "git", 
+      "color": "orange",
+      "category": "Tools & DevOps"
+    },
+    { 
+      "name": "Docker", 
+      "level": "Beginner", 
+      "iconName": "docker", 
+      "color": "blue",
+      "category": "Tools & DevOps"
     }
   ],
   "experiences": [
@@ -99,43 +124,30 @@
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Dashboard",
-      "description": "Admin dashboard untuk mengelola produk, orders, dan analytics dengan real-time updates menggunakan WebSocket.",
-      "image": "/images/project-ecommerce.jpg",
-      "tech": ["React", "Node.js", "MongoDB", "Socket.io"],
-      "demoUrl": "https://demo-ecommerce.example.com",
-      "githubUrl": "https://github.com/afrizalfikri22/ecommerce-dashboard",
-      "featured": true
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with payment integration",
+      "image": "/project1.jpg",
+      "tech": ["React", "Node.js", "MongoDB"],
+      "github": "https://github.com/afrizalfikrii",
+      "demo": "https://demo.com"
     },
     {
       "id": 2,
       "title": "Task Management App",
-      "description": "Aplikasi manajemen tugas dengan fitur drag-and-drop, kolaborasi tim, dan notifikasi real-time.",
-      "image": "/images/project-taskapp.jpg",
-      "tech": ["Next.js", "Tailwind", "Prisma", "PostgreSQL"],
-      "demoUrl": "https://taskapp.example.com",
-      "githubUrl": "https://github.com/afrizalfikri22/task-management",
-      "featured": true
+      "description": "Collaborative task management with real-time updates",
+      "image": "/project2.jpg",
+      "tech": ["Next.js", "PostgreSQL", "Tailwind"],
+      "github": "https://github.com/afrizalfikrii",
+      "demo": "https://demo.com"
     },
     {
       "id": 3,
-      "title": "Weather Forecast App",
-      "description": "Aplikasi cuaca dengan visualisasi data interaktif, forecast 7 hari, dan geolocation support.",
-      "image": "/images/project-weather.jpg",
-      "tech": ["React", "Chart.js", "OpenWeather API", "Tailwind"],
-      "demoUrl": "https://weather-app.example.com",
-      "githubUrl": "https://github.com/afrizalfikri22/weather-app",
-      "featured": false
-    },
-    {
-      "id": 4,
-      "title": "Blog Platform",
-      "description": "Platform blogging dengan markdown editor, syntax highlighting, dan SEO optimization.",
-      "image": "/images/project-blog.jpg",
-      "tech": ["Django", "PostgreSQL", "Redis", "TailwindCSS"],
-      "demoUrl": "https://blog.example.com",
-      "githubUrl": "https://github.com/afrizalfikri22/blog-platform",
-      "featured": false
+      "title": "Weather Dashboard",
+      "description": "Real-time weather tracking with data visualization",
+      "image": "/project3.jpg",
+      "tech": ["React", "API Integration", "Chart.js"],
+      "github": "https://github.com/afrizalfikrii",
+      "demo": "https://demo.com"
     }
   ],
   "contact": {
