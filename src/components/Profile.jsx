@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, MapPin, School, Mail, Code2 } from 'lucide-react';
+import { Github, Linkedin, MapPin, School, Mail, Code2, FileText } from 'lucide-react';
 import RevealOnScroll from './RevealOnScroll';
 import TiltCard from './TiltCard';
 import data from '../portfolioData.json';
@@ -72,6 +72,16 @@ const Profile = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
+              <a 
+                href="/cv.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-8 py-4 border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 font-bold rounded-xl hover:bg-cyan-500/20 transition-all duration-300 flex items-center gap-2"
+              >
+                <span className="relative z-10">Download CV</span>
+                <FileText size={18} />
+              </a>
+
               <a href={`mailto:${data.email}`} className="relative px-8 py-4 bg-white text-black font-bold rounded-xl hover:scale-105 transition-transform duration-300 flex items-center gap-2 group overflow-hidden">
                 <span className="relative z-10">Contact Me</span>
                 <Mail size={18} className="relative z-10 group-hover:rotate-12 transition-transform"/>
