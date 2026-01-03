@@ -92,8 +92,8 @@
       "company": "Mayesha Baby Spa",
       "period": "2024 - Now",
       "type": "FREELANCE",
-      "description": "Membuat website untuk Mayesha Baby Spa.",
-      "tech": ["React", "Tailwind"]
+      "description": "Pengembangan dan maintenance website landing page berbasis Next.js. Mengelola deployment, hosting, dan domain management. Melakukan penyesuaian tampilan website sesuai kebutuhan bisnis klien.",
+      "tech": ["Next.js", "React", "Tailwind CSS", "Vercel"]
     }
   ],
   "projects": [
