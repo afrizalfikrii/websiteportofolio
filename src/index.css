@@ -817,11 +817,7 @@ footer div {
   .masthead nav {
     grid-column: 2 / 5;
     justify-content: flex-end;
-    gap: 18px;
-  }
-
-  .masthead nav a:nth-child(2) {
-    display: none;
+    gap: clamp(12px, 4vw, 18px);
   }
 
   .availability {
