@@ -3,22 +3,52 @@ import { useEffect } from "react";
 const projects = [
   {
     index: "01",
-    title: "Laundry Management System",
-    type: "Full-stack application",
+    title: "Car Rental Booking System",
+    type: "Web application",
     description:
-      "Customer, order and payment management in one operational system, with an analytics dashboard and automated WhatsApp notifications.",
-    stack: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Shadcn UI", "Recharts"],
-    href: "https://github.com/afrizalfikrii",
-    linkLabel: "View on GitHub",
+      "Fleet booking platform where customers pick a location and dates, with total rental pricing calculated automatically.",
+    stack: ["Laravel", "Tailwind CSS", "MySQL"],
+    href: "https://jalainrentcar.vercel.app/",
+    linkLabel: "Visit live site",
   },
   {
     index: "02",
-    title: "Mayesha Baby Spa",
-    type: "Client website",
+    title: "UMKM Point of Sale (PosMart)",
+    type: "Full-stack application",
     description:
-      "A company profile website built for a real baby spa business, focused on clear service information and an easy path to contact.",
-    stack: ["Next.js", "React", "Tailwind CSS", "Vercel"],
-    href: "https://mayeshababyspa.vercel.app",
+      "Web-based POS system built for small businesses, complete with thermal receipt printing and daily revenue reports.",
+    stack: ["React", "Laravel", "PostgreSQL"],
+    href: "https://posmartdemo.vercel.app/",
+    linkLabel: "Visit live demo",
+  },
+  {
+    index: "03",
+    title: "IoT Lab Monitoring Dashboard",
+    type: "IoT web application",
+    description:
+      "Real-time ESP8266 monitoring and control dashboard used by students during Internet of Things practical sessions.",
+    stack: ["ESP8266", "Firebase"],
+    href: "https://iotkitdashboardums.vercel.app/",
+    linkLabel: "Visit live site",
+  },
+  {
+    index: "04",
+    title: "Bayarku Payment Directory",
+    type: "Web application",
+    description:
+      "Consolidates bank accounts, e-wallets, and QRIS into a single shareable link so customers can pick and copy payment details effortlessly.",
+    stack: ["Next.js", "Tailwind CSS"],
+    href: "https://bayarkuu.vercel.app/warungberkahjaya",
+    linkLabel: "Visit live site",
+  },
+  {
+    index: "05",
+    title: "Outdoor Gear Rental",
+    type: "Client landing page",
+    description:
+      "Landing page for an outdoor equipment rental business featuring a gear catalog and direct WhatsApp booking.",
+    stack: ["Next.js", "Tailwind CSS"],
+    href: "https://summitrentoutdoor.vercel.app/",
     linkLabel: "Visit live site",
   },
 ];
@@ -41,8 +71,9 @@ const experience = [
   {
     period: "NOV 2025 — NOW",
     role: "Freelance Web Developer",
-    company: "Mayesha Baby Spa",
-    detail: "Designed and developed the company profile website for a live client business.",
+    company: "Independent / Client Projects",
+    detail:
+      "Design, build, and deploy responsive websites and custom web applications for small businesses and client operations.",
   },
 ];
 
@@ -65,7 +96,7 @@ const skills = [
   },
   {
     title: "Tools",
-    items: ["Git", "GitHub", "Docker", "Vercel", "Zabbix", "ESP 32/8266", "Docker"],
+    items: ["Git", "GitHub", "Docker", "Vercel", "Zabbix", "ESP 32/8266"],
   },
 ];
 
@@ -189,18 +220,18 @@ export default function App() {
           </div>
           <div className="hero-title-wrap">
             <h1 id="hero-title">
-              Network <span>&amp;</span>
+              Web <span>&amp;</span>
               <br />
-              Security,
+              Systems
               <br />
-              <em>with web on the side.</em>
+              <em>Engineering.</em>
             </h1>
           </div>
           <div className="hero-intro">
             <p>
-              I&apos;m an Informatics student working across network administration, cybersecurity,
-              and hands-on IoT labs. I also build practical web systems when the problem calls for
-              one.
+              I&apos;m an Informatics student building full-stack web applications, IoT dashboards,
+              and reliable network infrastructure — from React and Laravel interfaces to MikroTik,
+              Zabbix, and security monitoring.
             </p>
             <div className="social-links" aria-label="Profile links">
               <a href={profileLinks.github} target="_blank" rel="noreferrer">
@@ -216,8 +247,8 @@ export default function App() {
           </div>
           <NetworkDiagram />
           <div className="hero-note" aria-hidden="true">
-            <span>PRIMARY FIELD</span>
-            <strong>NETWORK OPS / SECURITY</strong>
+            <span>FOCUS</span>
+            <strong>WEB &amp; SYSTEMS ENG.</strong>
           </div>
         </section>
 
@@ -324,9 +355,9 @@ export default function App() {
         <section className="contact-section" id="contact" aria-labelledby="contact-heading">
           <span className="contact-label">05 / CONTACT</span>
           <h2 id="contact-heading">
-            Have a network problem
+            Have a web project
             <br />
-            or a useful web project?
+            or a systems challenge?
           </h2>
           <a className="email-link" href={profileLinks.email}>
             afrizalfikridev@gmail.com <Arrow />
@@ -336,7 +367,7 @@ export default function App() {
 
       <footer>
         <p>© AFRIZAL FIKRI</p>
-        <p>INFORMATICS / NETWORK &amp; SECURITY</p>
+        <p>INFORMATICS / WEB &amp; SYSTEMS</p>
         <div>
           <a href={profileLinks.github} target="_blank" rel="noreferrer">
             GitHub

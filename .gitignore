@@ -10,3 +10,5 @@ vite.config.*.timestamp-*
 *-debug.log*
 logs/
 *.log
+*.docx
+~$*
