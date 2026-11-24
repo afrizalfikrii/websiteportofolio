@@ -102,8 +102,6 @@ const skills = [
 
 const certifications = [
   { date: "JUN 2026", name: "MTCNA", issuer: "MikroTik" },
-  { date: "DEC 2025", name: "Data Engineer Bootcamp", issuer: "dibimbing.id" },
-  { date: "OCT 2025", name: "Introduction to APIs in Python", issuer: "DataCamp" },
   {
     date: "JUN 2025",
     name: "Introduction to Cybersecurity",
